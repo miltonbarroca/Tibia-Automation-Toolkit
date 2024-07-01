@@ -22,7 +22,7 @@ def main():
                     pg.press('space')
                     time.sleep(9)
                     actions.get_loot()
-                    break  # Saia do loop interno quando a batalha for encontrada
+                    break
                 else:
                     for item in data:
                         actions.next_box(item['path'], item['wait'])
@@ -30,7 +30,7 @@ def main():
                             pg.press('space')
                             time.sleep(12)
                             actions.get_loot()
-                            break  # Saia do loop interno quando a batalha for encontrada
+                            break
 
 
 if __name__ == "__main__":

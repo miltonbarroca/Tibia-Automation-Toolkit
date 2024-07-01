@@ -4,10 +4,11 @@ from functools import lru_cache
 import pyautogui as pg
 from conf import Constants
 
+folder_path = 'img/status/'
+
 @lru_cache(maxsize=None)
 def getHpIcon():
-    image = os.path.join('img', 'heart.png')
-    hpIconPosition = locateImage(image, center=True)
+    hpIconPosition = locateImage(folder_path + 'heart', center=True)
     if hpIconPosition is None:
         return 
     return hpIconPosition
